@@ -179,7 +179,7 @@ export async function handleRequest(request, env) {
     });
   }
   if (url.pathname === '/' && request.method === 'GET') {
-    return new Response('<!doctype html><title>Telegram WEB Proxy</title><p>Telegram WEB Proxy</p>', {
+    return new Response('hello', {
       status: 200,
       headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
     });
